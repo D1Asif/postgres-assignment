@@ -1,0 +1,31 @@
+1. What is PostgreSQL?
+PostgreSQL is a relational database system. It is open source and compliant with SQL.
+
+2. What is the purpose of a database schema in PostgreSQL?
+Schema serves as a organizational structure in PostgreSQL. For example, tables related to orders, inventory and customers can be organized in separate schemas for better maintainability. It serves better access control, modularity and maintenance. 
+
+3. Explain the primary key and foreign key concepts in PostgreSQL.
+Primary key is a column or a set of column in a relational database table that can uniquely identify each row in that table. Foreign key is a column or a set of columns that establishes relationship between 2 tables by referencing primary key of another table. 
+
+4. What is the difference between the VARCHAR and CHAR data types?
+Both VARCHAR and CHAR type is used to store string type data. In CHAR data type, the value always takes the maximum length specified. If the string to be stored is shorter than the maximum length, it's padded to obtain the maximum length. However, in VARCHAR no such padding is added. The string is stored exactly as the input string.
+
+5. Explain the purpose of the WHERE clause in a SELECT statement.
+Where clause is used in SELECT statement to query based on any specific condition.
+
+6. What are the LIMIT and OFFSET clauses used for?
+LIMIT is used to set maximum how many rows will be displayed. For example, if there is 20 rows in a table and we LIMIT to 8, only the first 8 data will be shown. In the other hand, OFFSET let us to set how many rows to skip from the first. If we set OFFSET to 5. It will start printing from the 6th row.
+
+7. How can you perform data modification using UPDATE statements?
+UPDATE table_name
+SET column1 = value1, column2 = value2...
+WHERE condition;
+
+8. What is the significance of the JOIN operation, and how does it work in PostgreSQL?
+JOIN operation combines rows of 2 or multiple tables if there is a relationship among the tables via primary key and foreign key. There are several type of JOIN operations in PostgreSQL. For example, INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN, CROSS JOIN etc.
+
+9. Explain the GROUP BY clause and its role in aggregation operations.
+GROUP BY clause makes group based on same value and offers to perform aggregate functions like count, avg etc values. It allows to summarize, categorize and analyze data in group level.
+
+10. What is the purpose of an index in PostgreSQL, and how does it optimize query performance? 
+Index is a database object that helps to retrieve data faster from table. It acts like a lookup table that allows the dbms to quickly locate and access rows that satisfy query condition.
